@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/aaa
+    destination: /var/www/html/
 
 hooks:
   AfterInstall:
