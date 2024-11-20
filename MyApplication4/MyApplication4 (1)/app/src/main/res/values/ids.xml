@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="faq1" type="id" />
+    <item name="answer1" type="id" />
+    <item name="arrow1" type="id" />
+    <item name="faq2" type="id" />
+    <item name="answer2" type="id" />
+    <item name="arrow2" type="id" />
+    <item name="faq3" type="id" />
+    <item name="answer3" type="id" />
+    <item name="arrow3" type="id" />
+    <item name="faq4" type="id" />
+    <item name="answer4" type="id" />
+    <item name="arrow4" type="id" />
+    <item name="faq5" type="id" />
+    <item name="answer5" type="id" />
+    <item name="arrow5" type="id" />
+</resources>

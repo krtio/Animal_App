@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Community.community">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:queryHint="검색어를 입력하시오" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_board"
+                android:fontFamily="@font/notomedium"
+                android:layout_marginRight="8dp"
+                android:text="전체" />
+
+            <Button
+                android:id="@+id/btnNotice0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_board"
+                android:fontFamily="@font/notomedium"
+                android:layout_marginRight="8dp"
+                android:text="자유게시판" />
+
+            <Button
+                android:id="@+id/btnNotice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_board"
+                android:fontFamily="@font/notomedium"
+                android:layout_marginRight="8dp"
+                android:text="실종동물게시판" />
+
+            <Button
+                android:id="@+id/btnNotice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_board"
+                android:fontFamily="@font/notomedium"
+                android:layout_marginRight="8dp"
+                android:text="나눔게시판" />
+
+            <Button
+                android:id="@+id/btnNotice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_board"
+                android:fontFamily="@font/notomedium"
+                android:layout_marginRight="8dp"
+                android:text="공동구매게시판" />
+            <Button
+                android:id="@+id/btnNotice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_board"
+                android:fontFamily="@font/notomedium"
+                android:layout_marginRight="8dp"
+                android:text="모임게시판" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/write"
+        android:backgroundTint="#FF7F00"
+        android:contentDescription="submit"
+        android:layout_margin="16dp" />
+</LinearLayout>

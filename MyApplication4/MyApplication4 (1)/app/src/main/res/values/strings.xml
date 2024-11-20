@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="google_maps_key">AIzaSyBZ4m1YILBLH1DGF1H13Tvl6ZYyCjLXetY</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="animal_array">
+        <item>고양이</item>
+        <item>강아지</item>
+    </string-array>
+</resources>

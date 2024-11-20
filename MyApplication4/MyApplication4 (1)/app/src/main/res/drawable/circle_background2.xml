@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FF7F00"/>
+    <corners android:radius="300dp"/> <!-- 반경을 이미지 크기만큼 설정 -->
+    <stroke android:width="0dp" android:color="@android:color/darker_gray"/>
+</shape>
