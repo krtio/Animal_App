@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 하얀색 배경 -->
+    <item>
+        <shape>
+            <solid android:color="#f3f3f3" />
+            <corners android:radius="3dp" /><!-- 하얀 배경 -->
+        </shape>
+    </item>
+
+    <!-- 위쪽 검은 선 -->
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp"
+        android:height="0.4dp"> <!-- 선의 높이 -->
+        <shape>
+            <solid android:color="#000000" /> <!-- 검은 선 -->
+        </shape>
+    </item>
+
+</layer-list>

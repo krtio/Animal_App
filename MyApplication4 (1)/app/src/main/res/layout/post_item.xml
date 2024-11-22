@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="10dp">
+
+    <!-- 왼쪽 텍스트 레이아웃 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- 첫 번째 줄: 카테고리와 제목 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textSize="13sp"
+                android:fontFamily="@font/preten_light"
+                android:textColor="#585858" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#0f0f0f"
+                android:fontFamily="@font/preten_medium"
+                android:textSize="15sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/tvCommentcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FF7F00"
+                android:fontFamily="@font/preten_semibold"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- 두 번째 줄: 글쓴이 -->
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글쓴이"
+            android:fontFamily="@font/preten_medium"
+            android:textColor="#3d3939"
+            android:textSize="15sp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+
+    <!-- 오른쪽 아래에 위치한 추가 TextView -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024.11.30"
+        android:textSize="13sp"
+        android:fontFamily="@font/preten_regular"
+        android:textColor="#666A73"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="end|bottom" />
+
+
+</LinearLayout>

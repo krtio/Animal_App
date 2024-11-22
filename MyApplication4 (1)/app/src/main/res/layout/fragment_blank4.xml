@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Arlam.arlam">
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.widget.Button
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_style_board"
+            android:text="채팅" />
+
+        <android.widget.Button
+            android:id="@+id/tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style_board"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:text="알람" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp" /> <!-- tabLayout의 높이를 고려하여 여백 추가 -->
+
+</FrameLayout>
